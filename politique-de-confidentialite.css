@@ -3,13 +3,16 @@ body {
     padding: 0;
     font-family: Arial, sans-serif; 
 }
+
+/*Partie Header*/
+
 header {
     width: 100%;
     z-index: 1000;
 }
 
 .header-transparent {
-    background-color: rgba(86, 62, 34, 0.8); /* Couleur de fond plus transparente */
+    background-color: rgba(86, 62, 34, 0.8); 
 }
 
 .header-blocks {
@@ -19,14 +22,14 @@ header {
     margin-top: 2px;
 }
 .menu-icon {
-    color: white; /* Couleur blanche pour l'icône */
-    margin-left: 10px; /* Ajout d'une marge à gauche pour séparer l'image de l'icône */
-    font-size: 1.5em; /* Taille de police de l'icône */
+    color: white;
+    margin-left: 10px;
+    font-size: 1.5em;
 }
 
 .logo {
-    display: flex; /* Utilisation de flexbox pour aligner l'image et l'icône */
-    align-items: center; /* Centrage vertical des éléments */
+    display: flex;
+    align-items: center; 
 }
 
 .logo img {
@@ -65,7 +68,7 @@ header {
 @media (max-width: 768px) {
     .header-blocks {
         flex-direction: column; 
-        align-items: stretch; /* Etirer les éléments pour qu'ils prennent toute la largeur */
+        align-items: stretch; 
     }
 
     .header-wrap {
@@ -73,7 +76,7 @@ header {
     }
 
     .header-wrap nav ul {
-        flex-direction: column; /* Afficher les éléments de la liste en colonne sur les petits écrans */
+        flex-direction: column; 
     }
     .block-politique-de-confidentialite {
         margin-left: 10px;
@@ -131,15 +134,16 @@ footer {
     color: white;
 }
 .footer-links {
-    margin-top: 10px; /* Espacement entre le copyright et les liens */
+    margin-top: 10px; 
 }
 
 .footer-links nav ul li{
     display: inline;
-    margin: 0 20px; /* Espacement entre les liens */
+    margin: 0 20px; 
     list-style: none;
     white-space: nowrap;
 }
+
 .footer-links a {
     text-decoration: none; 
     color: white;

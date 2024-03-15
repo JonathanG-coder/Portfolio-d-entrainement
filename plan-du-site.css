@@ -3,6 +3,8 @@ body {
     padding: 0;
     font-family: Arial, sans-serif; 
 }
+/*Partie Header*/
+
 header {
     width: 100%;
     z-index: 1000;
@@ -19,14 +21,14 @@ header {
     margin-top: 2px;
 }
 .menu-icon {
-    color: white; /* Couleur blanche pour l'icône */
-    margin-left: 10px; /* Ajout d'une marge à gauche pour séparer l'image de l'icône */
-    font-size: 1.5em; /* Taille de police de l'icône */
+    color: white; 
+    margin-left: 10px;
+    font-size: 1.5em;
 }
 
 .logo {
-    display: flex; /* Utilisation de flexbox pour aligner l'image et l'icône */
-    align-items: center; /* Centrage vertical des éléments */
+    display: flex; 
+    align-items: center; 
 }
 
 .logo img {
@@ -73,7 +75,7 @@ header {
     }
 
     .header-wrap nav ul {
-        flex-direction: column; /* Afficher les éléments de la liste en colonne sur les petits écrans */
+        flex-direction: column; 
     }
 }
 
@@ -118,7 +120,7 @@ li {
 footer {
     position: fixed;
     bottom: 0;
-    width: 100%; /* Ajoutez une largeur spécifiée */
+    width: 100%; 
     height: auto;
     background-color: #563e22;
     text-align: center !important;
@@ -127,12 +129,12 @@ footer {
     color: white;
 }
 .footer-links {
-    margin-top: 10px; /* Espacement entre le copyright et les liens */
+    margin-top: 10px; 
 }
 
 .footer-links nav ul li{
     display: inline;
-    margin: 0 20px; /* Espacement entre les liens */
+    margin: 0 20px; 
     list-style: none;
     white-space: nowrap;
 }
@@ -143,13 +145,13 @@ footer {
 } 
 @media screen and (max-width: 768px) {
     footer {
-        position: fixed; /* Le footer ne sera plus fixé en bas */
+        position: fixed;
     }
 }
 
 @media screen and (max-width: 480px) {
     .footer-links nav ul li {
-        margin: 0 10px; /* Réduire l'espacement entre les liens */
+        margin: 0 10px; 
     }
 }
 /* Partie footer*/

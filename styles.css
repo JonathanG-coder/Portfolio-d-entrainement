@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif; 
 }
+/*Partie HEADER*/
 header {
     position: fixed;
     width: 100%;
@@ -26,8 +27,8 @@ header {
 }
 
 .logo {
-    display: flex; /* Utilisation de flexbox pour aligner l'image et l'icône */
-    align-items: center; /* Centrage vertical des éléments */
+    display: flex; 
+    align-items: center;
 }
 
 .logo img {
@@ -74,7 +75,7 @@ header {
     }
 
     .header-wrap nav ul {
-        flex-direction: column; /* Afficher les éléments de la liste en colonne sur les petits écrans */
+        flex-direction: column; 
     }
 }
 
@@ -86,29 +87,24 @@ header {
 }
 
 .section {
-    padding-top: 80px; /* Pour éviter que le contenu soit masqué sous le menu */
-    /* Supprimer la hauteur fixe pour les sections si nécessaire */
+    padding-top: 80px; /* Pour éviter que le contenu soit masqué sous le menu */  
 }
-
-
-/* Voici ci-dessus la partie HEADER--------------------------------------------------*/
-/* Voici ci-dessous la partie Acceuil--------------------------------------------------*/
-
+/*Partie HEADER*/
+/*Partie Acceuil*/
 #accueil 
 {
     background-image: url('image/banc-foret.webp');
-    /*width: 100vw;*/
-    height: 80vh; /* Hauteur souhaitée */
-    background-size: cover; /* Ajuster la taille de l'image pour couvrir l'ensemble de la section */
-    background-position: center; /* Centrer l'image */
-    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    height: 80vh; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
     color: #ffffff;
-    text-align: center; /* Centrer le texte */
-    padding: 100px 0; /* Ajouter un peu d'espace autour du texte */
-    display: flex; /* Utiliser flexbox */
-    flex-direction: column; /* Pour aligner les éléments verticalement */
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
+    text-align: center;
+    padding: 100px 0; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
 }
 
 #accueil h1,
@@ -116,8 +112,9 @@ header {
     font-size: 2.5em; 
 }
 
-/* Voici ci-dessus la partie Acceuil-*/
-/*Voici ci-dessous la partie A propos de moi */
+/*Partie Acceuil*/
+/*Partie A propos de moi */
+
 #profil {
     max-width: 1300px; 
     margin: 0 auto;
@@ -146,11 +143,8 @@ header {
     }
 } 
 
-
-
-
-/* Voici ci-dessus la partie A propos de moi-*/
-/*Voici ci-dessous la partie Actuellement -*/
+/* Partie A propos de moi */
+/* Partie Actuellement */
 
 .actuellement{
     background-image: url('image/feuilles.webp');
@@ -173,8 +167,8 @@ header {
     font-weight: bold;
 }
 
-/*Voici ci-dessus la partie Actuellement -*/
-/* Voici ci-dessous la partie concernant les compétences*/
+/* Partie Actuellement */
+/* Partie concernant les compétences*/
 #compétences {
     display: flex;
     flex-direction: column;
@@ -184,15 +178,15 @@ header {
 .compétences-block {
     display: flex;
     justify-content: space-between;
-    width: 80%; /* ou la largeur désirée */
-    max-width: 1200px; /* ajustez selon vos préférences */
+    width: 80%; 
+    max-width: 1200px; 
 }
 
 .compétences-performance,
 .compétences_CV {
-    width: 48%; /* ajustez selon vos préférences */
+    width: 48%; 
 }
-/*---Partie ci dessous compétence, titre et texte d'accroche */
+/* Partie compétences, titre et texte d'accroche */
 .compétences-phrase-accroche {
     text-align: center;
     max-width: 600px;
@@ -204,8 +198,8 @@ header {
 .compétences-phrase-accroche p {
     font-size: 1.2em;
 }
-/*---Partie ci dessus compétence, titre et texte d'accroche */
-/*---Partie ci dessous compétence, barre de progression*/
+/* Partie compétences, titre et texte d'accroche */
+/* Partie compétences, barre de progression*/
 .compétences-performance h2{
     text-align: center;
     margin-left: -150px;
@@ -235,8 +229,9 @@ header {
     background-color: #1e90ff; /* Bleu foncé */
     transition: width 0.5s ease-in-out;
 }
-/*---Partie ci dessus compétence, barre de progression*/
-/*---Partie ci dessous compétence, partie C-V*/
+
+/* Partie compétences, barre de progression*/
+/* Partie compétences, partie C-V*/
 .compétences_CV{
     width: 600px;
     height: auto;
@@ -245,7 +240,7 @@ header {
     
 }
 .compétences_CV img {
-    width: 90%; /* Prend la largeur totale de la div parente */
+    width: 90%; 
     height: auto;
     margin-bottom: 20px;
     border: 2px solid #CCCCCC;
@@ -273,19 +268,19 @@ header {
   
     .compétences-performance,
     .compétences_CV {
-      width: 100%; /* Prend la largeur totale */
+      width: 100%;
       margin-bottom: 20px;
     }
   
     .compétences-performance h2 {
-      margin-left: 0; /* Alignement du titre au centre */
+      margin-left: 0;
       text-align: center;
     }
   }
   
-/*---Partie ci dessus compétence, partie C-V*/
-/* Voici ci-dessus la partie concernant les compétences*/
-/* Voici ci-dessous la partie concernant les citations*/
+/* Partie compétences, partie C-V*/
+/* Partie concernant les compétences*/
+/* Partie concernant les citations*/
 .partie-citation{
     display: flex;
     justify-content: center;
@@ -312,19 +307,19 @@ header {
 
 @media screen and (max-width: 920px) {
     .partie-citation {
-        font-size: 1.5em; /* Réduire la taille de la police pour les écrans moyens */
+        font-size: 1.5em; 
     }
 }
 
-/* Pour les petits écrans */
+
 @media screen and (max-width: 750px) {
     .partie-citation {
-        font-size: 1em; /* Réduire la taille de la police pour les petits écrans */
+        font-size: 1em;
     }
 }
 
-/* Voici ci-dessus la partie concernant les citations*/
-/* Voici ci-dessous la partie concernant le portfolio*/
+/* Partie concernant les citations*/
+/* Partie concernant le portfolio*/
 
 .portfolio-presentation {
     text-align: center;
@@ -397,8 +392,8 @@ header {
         height: 80%;
     }
 }
-/* Voici ci-dessus la partie concernant le portfolio*/
-/* Voici ci-dessous la partie Contactez-moi------------*/
+/* Partie concernant le portfolio*/
+/* Partie Contactez-moi*/
 .contactez-moi{
     background-image: url('image/brume-toile-araignée.webp');
     background-position: center;
@@ -420,7 +415,7 @@ header {
     padding-bottom: 10px;
 }
 
-/* ---------------- ci-dessous blocks du formulaire------------------------*/
+/* Partie Contactez-moi, blocks du formulaire*/
 
 .blocks-formulaire {
     display: flex;
@@ -429,8 +424,8 @@ header {
     margin-right: 180px;
 }
 
-/* ---------------- ci-dessus blocks du formulaire------------------------*/
-/* ------ci-dessous côté gauche du formulaire -----------*/
+/* Partie Contactez-moi, blocks du formulaire*/
+/* Partie Contactez-moi, côté gauche du formulaire -----------*/
 .block-formulaire1 {
     width: 35%;
     text-align: justify;
@@ -442,9 +437,9 @@ header {
 }
 
 .input-group-item {
-    display: inline-block; /* Afficher les éléments côte à côte */
+    display: inline-block; 
     width: calc(50% - 10px); /* Ajuster la largeur des éléments */
-    margin-right: 5px; /* Ajouter une marge entre les éléments */
+    margin-right: 5px; 
     
 }
 
@@ -464,12 +459,12 @@ textarea {
 
 .formulaire-boutton button[type="submit"] {
     padding: 15px 15px 15px 15px; 
-    font-size: 16px; /* Ajustez la taille de la police */
-    width: 100px; /* Ajustez la largeur du bouton */
-    height: 50px; /* Ajustez la hauteur du bouton */
+    font-size: 16px; 
+    width: 100px;
+    height: 50px; 
 }
-/* ------ci-dessus côté gauche du formulaire -----------*/
-/* ------ci-dessous côté droit du formulaire -----------*/
+/* Partie Contactez-moi, côté gauche du formulaire -----------*/
+/* Partie Contactez-moi, côté droit du formulaire -----------*/
 .block-formulaire2 {
     width: 25%; 
     text-align: center;
@@ -491,8 +486,8 @@ textarea {
     margin-bottom: 100px;
 }
 
-/* ------ci-dessus côté droit du formulaire -----------*/
-/*parti responsive du formulaire*/
+/* Partie Contactez-moi, côté droit du formulaire -----------*/
+/* Partie Contactez-moi, responsive du formulaire*/
 @media only screen and (max-width: 1150px) {
     .blocks-formulaire {
         flex-direction: column; 
@@ -518,8 +513,9 @@ textarea {
         margin-bottom: 50px;
     }
 }
-/*parti responsive du formulaire*/
-/* Voici ci-dessous la partie concernant le footer-----------------------------------------*/
+/* Partie Contactez-moi, responsive du formulaire*/
+/* Partie Contactez-moi*/
+/* Partie concernant le footer*/
 footer {
     width: 100%; 
     min-height: 60px;
@@ -543,8 +539,8 @@ footer {
     color: white;
     white-space: nowrap;
 } 
-/* Voici ci-dessus la partie concernant le footer--------------------------------------------*/
-/* Voici ci-dessous la partie concernant les cookies-----------------------------------------*/
+/* Partie concernant le footer*/
+/* Partie concernant les cookies*/
 .cookie-banner {
     position: fixed;
     bottom: 0;
@@ -568,4 +564,4 @@ footer {
     padding: 5px 10px;
     cursor: pointer;
 }
-/* Voici ci-dessus la partie concernant les cookies---------------------------------------------*/
+/* Partie concernant les cookies*/
