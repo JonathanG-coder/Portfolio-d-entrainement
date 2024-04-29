@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /*partie header*/
 
 
-/* Voici ci-dessous la partie citations*/
+/*Partie citations*/
     //cette partie correspond au carrousel des citations.
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
@@ -52,9 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-/* Voici ci-dessus la partie citations*/
+/*Partie citations*/
 
-/* Voici ci-dessous la partie acceptation des cookies*/
+/*Partie acceptation des cookies*/
 document.addEventListener("DOMContentLoaded", function() {
     // Récupération de la bannière de cookies
     var cookieBanner = document.querySelector('.cookie-banner');
@@ -80,6 +80,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
-/* Voici ci-dessus la partie acceptation des cookies*/
+/*Partie acceptation des cookies*/
 
 
