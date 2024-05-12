@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
 }
+
 /*Partie HEADER*/
 header {
     position: fixed;
@@ -11,23 +12,25 @@ header {
 }
 
 .header-transparent {
-    background-color: rgba(86, 62, 34, 0.8); /* Couleur de fond plus transparente */
+    background-color: rgba(86, 62, 34, 0.8);
+    /* Couleur de fond plus transparente */
 }
 
 .header-blocks {
     display: flex;
-    justify-content:space-around; 
-    align-items: center; 
+    justify-content: space-around;
+    align-items: center;
     margin-top: 2px;
 }
+
 .menu-icon {
-    color: white; 
-    margin-left: 10px; 
-    font-size: 1.5em; 
+    color: white;
+    margin-left: 10px;
+    font-size: 1.5em;
 }
 
 .logo {
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
@@ -66,8 +69,9 @@ header {
 
 @media (max-width: 768px) {
     .header-blocks {
-        flex-direction: column; 
-        align-items: stretch; /* Etirer les éléments pour qu'ils prennent toute la largeur */
+        flex-direction: column;
+        align-items: stretch;
+        /* Etirer les éléments pour qu'ils prennent toute la largeur */
     }
 
     .header-wrap {
@@ -75,48 +79,49 @@ header {
     }
 
     .header-wrap nav ul {
-        flex-direction: column; 
+        flex-direction: column;
     }
 }
 
 @media (max-width: 1020px) {
     header {
-        position:absolute;
+        position: absolute;
         top: 0;
     }
 }
 
 .section {
-    padding-top: 80px; /* Pour éviter que le contenu soit masqué sous le menu */  
+    padding-top: 80px;
+    /* Pour éviter que le contenu soit masqué sous le menu */
 }
+
 /*Partie HEADER*/
 /*Partie Acceuil*/
-#accueil 
-{
+#accueil {
     background-image: url('image/banc-foret.webp');
-    height: 80vh; 
-    background-size: cover; 
-    background-position: center; 
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     color: #ffffff;
     text-align: center;
-    padding: 100px 0; 
-    display: flex; 
+    padding: 100px 0;
+    display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
 #accueil h1,
 #accueil h2 {
-    font-size: 2.5em; 
+    font-size: 2.5em;
 }
 
 /*Partie Acceuil*/
 /*Partie A propos de moi */
 
 #profil {
-    max-width: 1300px; 
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -125,43 +130,44 @@ header {
     text-align: center;
 }
 
-.profil-p{
-    margin:50px 0;
+.profil-p {
+    margin: 50px 0;
     font-size: 1.2em;
-    text-align:justify;
+    text-align: justify;
 }
 
 @media (max-width: 768px) {
     .profil-p {
         margin: 0 15px;
     }
-} 
+}
 
 @media (max-width: 1020px) {
     .profil-p {
         margin: 0 15px;
     }
-} 
+}
 
 /* Partie A propos de moi */
 /* Partie Actuellement */
 
-.actuellement{
+.actuellement {
     background-image: url('image/feuilles.webp');
     height: 40vh;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    color: white; 
+    align-items: center;
+    color: white;
 }
 
 .actuellement h2 {
-    font-size: 2em; 
+    font-size: 2em;
 }
+
 .actuellement p {
     font-size: 1.7em;
     font-weight: bold;
@@ -175,32 +181,37 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .compétences-block {
     display: flex;
     justify-content: space-between;
-    width: 80%; 
-    max-width: 1200px; 
+    width: 80%;
+    max-width: 1200px;
 }
 
 .compétences-performance,
 .compétences_CV {
-    width: 48%; 
+    width: 48%;
 }
+
 /* Partie compétences, titre et texte d'accroche */
 .compétences-phrase-accroche {
     text-align: center;
     max-width: 600px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
+
 .compétences-phrase-accroche h2 {
     font-size: 2em;
 }
+
 .compétences-phrase-accroche p {
     font-size: 1.2em;
 }
+
 /* Partie compétences, titre et texte d'accroche */
 /* Partie compétences, barre de progression*/
-.compétences-performance h2{
+.compétences-performance h2 {
     text-align: center;
     margin-left: -150px;
     font-size: 1.2em;
@@ -226,29 +237,33 @@ header {
 
 .progress-competences {
     height: 100%;
-    background-color: #1e90ff; /* Bleu foncé */
+    background-color: #1e90ff;
+    /* Bleu foncé */
     transition: width 0.5s ease-in-out;
 }
 
 /* Partie compétences, barre de progression*/
 /* Partie compétences, partie C-V*/
-.compétences_CV{
+.compétences_CV {
     width: 600px;
     height: auto;
     margin-bottom: 50px;
     padding: 0;
-    
+
 }
+
 .compétences_CV img {
-    width: 90%; 
+    width: 90%;
     height: auto;
     margin-bottom: 20px;
     border: 2px solid #CCCCCC;
 }
-.button-cv{
+
+.button-cv {
     text-align: center;
 }
-.download-button-CV{
+
+.download-button-CV {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
@@ -258,56 +273,62 @@ header {
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
+
 .download-button-CV:hover {
     background-color: #0056b3;
 }
+
 @media screen and (max-width: 780px) {
     .compétences-block {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .compétences-performance,
     .compétences_CV {
-      width: 100%;
-      margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 20px;
     }
-  
+
     .compétences-performance h2 {
-      margin-left: 0;
-      text-align: center;
+        margin-left: 0;
+        text-align: center;
     }
-  }
-  
+}
+
 /* Partie compétences, partie C-V*/
 /* Partie concernant les compétences*/
 /* Partie concernant les citations*/
-.partie-citation{
+.partie-citation {
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url('image/tête-arbre.webp');
-    background-position: center 25%; /*ajouste l'image au centre avec 25> */
+    background-position: center 25%;
+    /*ajouste l'image au centre avec 25> */
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
     color: #ffffff;
     font-size: 2em;
 }
-.citation{
+
+.citation {
     text-align: center;
     width: 80%;
     margin: 0 auto;
 }
+
 .partie-citation blockquote {
     margin: 0;
 }
+
 .citation footer {
-    background-color:transparent;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 920px) {
     .partie-citation {
-        font-size: 1.5em; 
+        font-size: 1.5em;
     }
 }
 
@@ -327,7 +348,7 @@ header {
 
 .portfolio-presentation h2 {
     font-size: 2em;
-    
+
 }
 
 .portfolio-presentation p {
@@ -340,25 +361,28 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    
+
 }
+
 .portfolio-menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between; 
-    flex-wrap: wrap; /* Permettre aux éléments de s'enrouler sur les petits écrans */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Permettre aux éléments de s'enrouler sur les petits écrans */
 }
 
 .portfolio-menu li {
-    flex: 1; /* Ajuster la taille de l'élément pour remplir l'espace disponible */
+    flex: 1;
+    /* Ajuster la taille de l'élément pour remplir l'espace disponible */
     text-align: center;
     margin: 10px;
 }
 
 .portfolio-menu li img {
-    width: 80%; 
+    width: 80%;
     height: 80%;
     object-fit: cover;
     border: 2px solid #333;
@@ -376,25 +400,29 @@ header {
 
 @media only screen and (max-width: 768px) {
     .portfolio-menu li {
-        width: 80%; 
+        width: 80%;
     }
+
     .portfolio-menu ul {
         flex-direction: column;
         align-items: center;
     }
+
     .portfolio-menu li {
         margin-right: 0;
-        margin-bottom: 50px; 
+        margin-bottom: 50px;
         text-align: center;
     }
+
     .portfolio-menu li img {
-        width: 80%; 
+        width: 80%;
         height: 80%;
     }
 }
+
 /* Partie concernant le portfolio*/
 /* Partie Contactez-moi*/
-.contactez-moi{
+.contactez-moi {
     background-image: url('image/brume-toile-araignée.webp');
     background-position: center;
     background-repeat: no-repeat;
@@ -404,13 +432,13 @@ header {
 }
 
 .contactez-moi-presentation h2 {
-    font-size: 2em; 
+    font-size: 2em;
     text-align: center;
-    padding-top: 50px;  
+    padding-top: 50px;
 }
 
 .contactez-moi-presentation p {
-    font-size: 1.2em; 
+    font-size: 1.2em;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -419,7 +447,7 @@ header {
 
 .blocks-formulaire {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin-left: 180px;
     margin-right: 180px;
 }
@@ -433,14 +461,15 @@ header {
 }
 
 .input-group {
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
 .input-group-item {
-    display: inline-block; 
-    width: calc(50% - 10px); /* Ajuster la largeur des éléments */
-    margin-right: 5px; 
-    
+    display: inline-block;
+    width: calc(50% - 10px);
+    /* Ajuster la largeur des éléments */
+    margin-right: 5px;
+
 }
 
 input[type="text"],
@@ -448,7 +477,7 @@ input[type="email"],
 input[type="tel"],
 textarea {
     width: 100%;
-    height: 25px; 
+    height: 25px;
 }
 
 .formulaire-boutton {
@@ -458,15 +487,16 @@ textarea {
 
 
 .formulaire-boutton button[type="submit"] {
-    padding: 15px 15px 15px 15px; 
-    font-size: 16px; 
+    padding: 15px 15px 15px 15px;
+    font-size: 16px;
     width: 100px;
-    height: 50px; 
+    height: 50px;
 }
+
 /* Partie Contactez-moi, côté gauche du formulaire -----------*/
 /* Partie Contactez-moi, côté droit du formulaire -----------*/
 .block-formulaire2 {
-    width: 25%; 
+    width: 25%;
     text-align: center;
     margin-top: 50px;
     margin-left: 50px;
@@ -478,7 +508,7 @@ textarea {
 }
 
 .additional-info img {
-    width: 50px; 
+    width: 50px;
     height: 50px;
 }
 
@@ -490,55 +520,61 @@ textarea {
 /* Partie Contactez-moi, responsive du formulaire*/
 @media only screen and (max-width: 1150px) {
     .blocks-formulaire {
-        flex-direction: column; 
-        align-items: center; 
-        margin: 0 10px; 
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
     }
 
     .block-formulaire1,
     .block-formulaire2 {
-        width: 50%; 
-        margin-top: 20px; 
+        width: 50%;
+        margin-top: 20px;
     }
 
     .input-group-item {
-        width: 100%; 
+        width: 100%;
         margin-right: 0;
     }
-    .block-formulaire2{
+
+    .block-formulaire2 {
         margin-right: 80px;
         margin-bottom: 30px;
     }
-    .additional-info p{
+
+    .additional-info p {
         margin-bottom: 50px;
     }
 }
+
 /* Partie Contactez-moi, responsive du formulaire*/
 /* Partie Contactez-moi*/
 /* Partie concernant le footer*/
 footer {
-    width: 100%; 
+    width: 100%;
     min-height: 60px;
     background-color: #563e22;
     text-align: center !important;
 
 }
-.copyright p{
+
+.copyright p {
     color: white;
     margin-top: 0;
 }
 
-.footer-links nav ul li{
+.footer-links nav ul li {
     display: inline;
-    margin: 0 20px; 
+    margin: 0 20px;
     list-style: none;
     white-space: nowrap;
 }
+
 .footer-links a {
-    text-decoration: none; 
+    text-decoration: none;
     color: white;
     white-space: nowrap;
-} 
+}
+
 /* Partie concernant le footer*/
 /* Partie concernant les cookies*/
 .cookie-banner {
@@ -564,4 +600,5 @@ footer {
     padding: 5px 10px;
     cursor: pointer;
 }
+
 /* Partie concernant les cookies*/
