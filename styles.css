@@ -136,17 +136,25 @@ header {
     text-align: justify;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1400px) {
     .profil-p {
-        margin: 0 15px;
+        margin: 0 50px; 
     }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 768px) {
     .profil-p {
-        margin: 0 15px;
+        margin: 0 50px; 
     }
 }
+
+@media (max-width: 480px) {
+    .profil-p {
+        margin: 0 50px; 
+    }
+}
+
 
 /* Partie A propos de moi */
 /* Partie Actuellement */
@@ -346,6 +354,24 @@ header {
     text-align: center;
 }
 
+@media (max-width: 1400px) {
+    .portfolio-presentation {
+        margin: 0 50px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-presentation {
+        margin: 0 50px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-presentation {
+        margin: 0 50px; 
+    }
+}
+
 .portfolio-presentation h2 {
     font-size: 2em;
 
@@ -355,6 +381,8 @@ header {
     font-size: 1.2em;
     margin-top: 20px;
 }
+
+
 
 .container-portfolio {
     display: flex;
